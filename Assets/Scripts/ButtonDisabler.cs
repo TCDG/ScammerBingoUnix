@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class ButtonDisabler : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ButtonDisabler : MonoBehaviour
     void Update()
     {
         scoreUI.text = "Score: " + score.ToString();
+        
     }
 
     public void BtnOnClick(int id)

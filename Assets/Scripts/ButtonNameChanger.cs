@@ -12,6 +12,7 @@ public class ButtonNameChanger : MonoBehaviour {
     void Start () {
         while (!finishedNames)
         {
+            
             if (i < 15)
             {
                 inputField[i].text = buttonTextHolder.buttontexts[i];

@@ -15,7 +15,7 @@
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneLinux:17</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneLinuxUniversal:25</UnityBuildTarget>
     <UnityVersion>5.3.5f1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\AppAnalytics.cs" />
     <Compile Include="Assets\Scripts\ButtonDisabler.cs" />
     <Compile Include="Assets\Scripts\Reset.cs" />
+    <Compile Include="Assets\Scripts\ResetButton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

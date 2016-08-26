@@ -9,10 +9,16 @@ public class ButtonDisabler : MonoBehaviour
     int score = 0;
     // Use this for initialization
     public Text scoreUI;
-    
+    Color defaultColor;
+    void Awake()
+    {
+        defaultColor = buttons[0].image.color;
+    }
+
     void Start()
     {
         scoreUI = scoreUI.GetComponent<Text>();
+        defaultColor = buttons[0].image.color;
     }
 
     // Update is called once per frame
@@ -24,11 +30,19 @@ public class ButtonDisabler : MonoBehaviour
 
     public void BtnOnClick(int id)
     {
-        buttons[id].enabled = false;
-        buttons[id].interactable = false;
-        buttons[id].image.color = Color.gray;
-        print("Button " + id + " clicked!");
-        score++;
+        if (buttons[id].enabled == true)
+        {
+            buttons[id].enabled = false;
+            buttons[id].image.color = Color.gray;
+            print("Button " + id + " clicked!");
+            score++;
+        } else
+        {
+            buttons[id].enabled = true;
+            buttons[id].image.color = defaultColor;
+            print("Button " + id + " reset!");
+            score--;
+        }
     }
 
     public void Reset()

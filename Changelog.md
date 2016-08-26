@@ -3,6 +3,9 @@
 
 # Alpha 3:
 - Made the UI look a little better, added a background and stuff
+- Added an App Icon
+- Fixed app Icon: Transparency
+- Added Analytics
 
 # Alpha 2:
 - Added the ability to change the text of the buttons; To change the text -> click Menu -> Edit text of, then edit the text of the buttons you want to edit, and the press set buttons. The text will be reset if you close the program and reopen.

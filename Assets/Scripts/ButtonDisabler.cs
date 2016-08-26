@@ -2,14 +2,19 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
+using System.IO;
 
 public class ButtonDisabler : MonoBehaviour
 {
     public Button[] buttons = new Button[16];
+    public Text[] buttonText = new Text[16];
+    public ButtonTextHolder buttonTextHolder;
     int score = 0;
     // Use this for initialization
     public Text scoreUI;
+    bool finishedNames = false;
     Color defaultColor;
+    public int i = 0;
     void Awake()
     {
         defaultColor = buttons[0].image.color;
@@ -17,8 +22,21 @@ public class ButtonDisabler : MonoBehaviour
 
     void Start()
     {
-        scoreUI = scoreUI.GetComponent<Text>();
-        defaultColor = buttons[0].image.color;
+        
+            
+            while (!finishedNames)
+            {
+                if (i < 15)
+                {
+                    buttonText[i].text = buttonTextHolder.buttontexts[i];
+                    i++;
+                }
+                else if (i == 15)
+                {
+                buttonText[i].text = buttonTextHolder.buttontexts[i];
+                break;
+                }
+            }
     }
 
     // Update is called once per frame
@@ -44,7 +62,24 @@ public class ButtonDisabler : MonoBehaviour
             score--;
         }
     }
+    public void OnValueChanged(int idOfOption)
+    {
+        if (idOfOption == 1)
+        {
+            Application.Quit();
+            
+        }
+        if (idOfOption == 2)
+        {
+            Application.LoadLevel(2);
 
+        }
+        if (idOfOption == 3)
+        {
+            Reset();
+
+        }
+    }
     public void Reset()
     {
         /**
@@ -63,4 +98,6 @@ public class ButtonDisabler : MonoBehaviour
         }*/
         Application.LoadLevel(0);
     }
+
+    
 }

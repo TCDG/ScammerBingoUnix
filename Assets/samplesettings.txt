@@ -1,0 +1,17 @@
+[buttontext]
+0=Do One Thing
+1=Wirus
+2=Doublu Doublu Doublu
+3=Stopped Services
+4=Seure Server
+5=Sir/Ma'm
+6=firewall
+7=One Time Charge
+8=Network Security
+9=Microsoft Certified
+10=Level 3/5/10 technician
+11=Windows + R
+12=cmd
+13=hh h
+14=Errors and Warnings
+15=Notepad

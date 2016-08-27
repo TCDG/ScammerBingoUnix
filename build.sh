@@ -20,9 +20,12 @@ echo "Attempting to build $project (version $version) for Windows"
   -buildWindowsPlayer "$(pwd)/Build/windows/$project.exe" \
   -quit
 
-if grep -q "Scripts have compiler errors" "$(pwd)/unity.log"; then
- echo "Build Faild!"
- echo "Log is here:"
+if grep -q "Compilation succeeded" "$(pwd)/unity.log"; then
+ echo "Build of Windows was a success! Continuing.."
+ cat $(pwd)/unity.log
+ exit 1
+else
+ echo "Build Failed. See log below"
  cat $(pwd)/unity.log
  exit 1
 fi

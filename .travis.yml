@@ -1,0 +1,22 @@
+language: objective-c
+osx_image: xcode61
+rvm:
+- 2.1.2
+before_install:
+- chmod u+x ./install.sh
+- chmod u+x ./build.sh
+install:
+- ./install.sh
+script:
+- ./build.sh
+deploy:
+  provider: releases
+  api_key: 
+    secure: $OAuth
+  file: 
+     - "./windows_exe.zip"
+     - "./mac_app.zip"
+     - "./linux_game.zip"
+  skip_cleanup: true
+  on:
+    tags: true

@@ -1,7 +1,7 @@
 # ScammerBingoApp
 Scammer Bingo: Multiplatform Edition
 
-[![Build Status](https://travis-ci.org/TCDG/ScammerBingoApp.svg?branch=master)](https://travis-ci.org/TCDG/ScammerBingoApp)
+Release Build Status: [![Build Status](https://travis-ci.org/TCDG/ScammerBingoApp.svg?branch=master)](https://travis-ci.org/TCDG/ScammerBingoApp)
 
 Copyright (c) 2016 TCDG
 

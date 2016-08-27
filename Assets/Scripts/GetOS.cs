@@ -40,12 +40,12 @@ public class GetOS : MonoBehaviour
         if (Application.platform == RuntimePlatform.Android)
         {
             title.text = "Scammer Bingo: Android Edition";
-            platform = "mac-osx";
+            platform = "android";
         }
         if (Application.platform == RuntimePlatform.OSXPlayer)
         {
             title.text = "Scammer Bingo: OSX Edition";
-            platform = "windows";
+            platform = "osx";
         }
         if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.OSXEditor)
         {

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Diagnostics;
 using UnityEngine.UI;
@@ -16,6 +16,7 @@ public class GetOS : MonoBehaviour
     {
         string platform = null;
         int id = 0;
+        title.text = "Scammer Bingo Unix"
         if (!Application.isEditor)
         {
 
@@ -46,6 +47,11 @@ public class GetOS : MonoBehaviour
         {
             title.text = "Scammer Bingo: OSX Edition";
             platform = "osx";
+        }
+        if (Application.platform == RuntimePlatform.WindowsPlayer) 
+        {
+            title.text = "Scammer Bingo: Windows Test Environment";
+            platform = "windows";
         }
         if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.OSXEditor)
         {

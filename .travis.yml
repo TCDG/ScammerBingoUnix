@@ -7,6 +7,10 @@ before_install:
 - chmod u+x ./build.sh
 install:
 - ./install.sh
+env:
+  global:
+    - secure: $ftplogin
+    - secure: $ftppass
 script:
 - ./build.sh
 deploy:

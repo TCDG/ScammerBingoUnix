@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
@@ -78,6 +78,10 @@ public class ButtonDisabler : MonoBehaviour
         {
             Reset();
 
+        }
+        if ( idOfOption == 4 ) {
+            Application.LoadLevelAdditive (3);
+            
         }
     }
     public void Reset()

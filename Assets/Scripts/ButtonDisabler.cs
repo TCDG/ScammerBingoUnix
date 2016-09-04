@@ -79,6 +79,10 @@ public class ButtonDisabler : MonoBehaviour
             Reset();
 
         }
+        if ( idOfOption == 4 ) {
+            Application.LoadLevelAdditive (3);
+            
+        }
     }
     public void Reset()
     {

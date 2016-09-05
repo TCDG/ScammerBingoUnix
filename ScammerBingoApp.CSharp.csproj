@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\ButtonDisabler.cs" />
     <Compile Include="Assets\Scripts\ButtonNameChanger.cs" />
     <Compile Include="Assets\Scripts\ButtonTextHolder.cs" />
+    <Compile Include="Assets\Scripts\Changelog.cs" />
     <Compile Include="Assets\Scripts\GetOS.cs" />
     <Compile Include="Assets\Scripts\Reset.cs" />
     <Compile Include="Assets\Scripts\ResetButton.cs" />

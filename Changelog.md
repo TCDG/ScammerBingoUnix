@@ -1,5 +1,13 @@
-﻿Changelog
+Changelog
 =========
+
+# Version 1:
+- Name of program is now "Scammer Bingo Unix"
+- Removed all bugs and kinks
+- Removed background picture
+
+# Alpha 4:
+- Name changes for title
 
 # Alpha 3:
 - Made the UI look a little better, added a background and stuff

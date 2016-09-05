@@ -16,7 +16,7 @@ public class GetOS : MonoBehaviour
     {
         string platform = null;
         int id = 0;
-        title.text = "Scammer Bingo Unix"
+        title.text = "Scammer Bingo Unix";
         if (!Application.isEditor)
         {
 
@@ -66,6 +66,26 @@ public class GetOS : MonoBehaviour
                 { "potions", platform },
                 { "userid", id },
                 { "memoryused", process.PrivateMemorySize64 }
+            });
+        }
+        if (!Application.isEditor)
+        {
+            Process process = Process.GetCurrentProcess();
+            Analytics.CustomEvent("UserInfo", new Dictionary<string, object>
+            {
+                { "potions", platform },
+                { "userid", id.ToString() },
+                { "memoryused", process.PrivateMemorySize64.ToString()}
+            });
+        }
+        if (Application.isEditor)
+        {
+            Process process = Process.GetCurrentProcess();
+            Analytics.CustomEvent("UserInfoEditorTest", new Dictionary<string, object>
+            {
+                { "potions", platform },
+                { "userid", id.ToString() },
+                { "memoryused", process.PrivateMemorySize64.ToString()}
             });
         }
     }

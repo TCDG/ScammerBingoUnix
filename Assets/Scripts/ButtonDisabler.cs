@@ -42,7 +42,7 @@ public class ButtonDisabler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreUi.text = "Score: " + score.ToString() + " / 16";
+        scoreUi.text = "Score: " + score.ToString() + " / 20";
         
     }
 

@@ -13,12 +13,12 @@ public class ButtonNameChanger : MonoBehaviour {
         while (!finishedNames)
         {
             
-            if (i < 15)
+            if (i < 19)
             {
                 inputField[i].text = buttonTextHolder.buttontexts[i];
                 i++;
             }
-            else if (i == 15)
+            else if (i == 19)
             {
                 inputField[i].text = buttonTextHolder.buttontexts[i];
                 break;
@@ -30,12 +30,12 @@ public class ButtonNameChanger : MonoBehaviour {
         i = 0;
         while(!finishedNames)
         {
-            if (i < 15)
+            if (i < 19)
             {
                 buttonTextHolder.buttontexts[i] = inputField[i].text;
                 i++;
             }
-            else if (i == 15)
+            else if (i == 19)
             {
                 buttonTextHolder.buttontexts[i] = inputField[i].text;
                 break;

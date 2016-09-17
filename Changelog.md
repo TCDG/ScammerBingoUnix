@@ -1,6 +1,9 @@
 Changelog
 =========
 
+# Version 1.1:
+- 20 buttons
+
 # Version 1:
 - Name of program is now "Scammer Bingo Unix"
 - Removed all bugs and kinks

@@ -11,7 +11,7 @@ public class ButtonDisabler : MonoBehaviour
     public ButtonTextHolder buttonTextHolder;
     int score = 0;
     // Use this for initialization
-    public Text scoreUI;
+    public Text scoreUi;
     bool finishedNames = false;
     Color defaultColor;
     public int i = 0;
@@ -42,7 +42,7 @@ public class ButtonDisabler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreUI.text = "Score: " + score.ToString() + " / 16";
+        scoreUi.text = "Score: " + score.ToString() + " / 16";
         
     }
 

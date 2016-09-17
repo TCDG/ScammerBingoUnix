@@ -35,7 +35,7 @@ public class ButtonNameChanger : MonoBehaviour {
                 buttonTextHolder.buttontexts[i] = inputField[i].text;
                 i++;
             }
-            else if (i == 15)
+            else if (i == 19)
             {
                 buttonTextHolder.buttontexts[i] = inputField[i].text;
                 break;

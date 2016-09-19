@@ -1,4 +1,4 @@
-# ScammerBingoApp
+# Scammer Bingo Unix
 Scammer Bingo: Multiplatform Edition 
 
 Release Build Status: [![Build Status](https://travis-ci.org/TCDG/ScammerBingoApp.svg?branch=master)](https://travis-ci.org/TCDG/ScammerBingoApp)

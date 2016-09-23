@@ -6,7 +6,7 @@ Release Build Status: [![Build Status](https://travis-ci.org/TCDG/ScammerBingoAp
 Downloads: 
 [![Github All Releases](https://img.shields.io/github/downloads/TCDG/ScammerBingoApp/total.svg?maxAge=2592000)]()
 
-Latest Version: [![GitHub release](https://img.shields.io/github/release/TCDG/ScammerBingoApp.svg?maxAge=2592000)](http://github.com/TCDG/ScammerBingoApp/releases/latest)
+Latest Version: [![GitHub release](https://img.shields.io/github/release/TCDG/ScammerBingoApp.svg)](http://github.com/TCDG/ScammerBingoApp/releases/latest)
 
 Copyright (c) 2016 TCDG
 

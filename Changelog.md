@@ -1,6 +1,10 @@
 Changelog
 =========
 
+# Version 1.1.1:
+- Fixed issue with the display of the Button Changer Screen
+- Initial Planning for Auto-Updater
+
 # Version 1.1:
 - 20 buttons
 
